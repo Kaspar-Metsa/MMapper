@@ -210,12 +210,12 @@ set_target_properties(
 add_test(NAME TestAdventure COMMAND TestAdventure)
 
 # Timer
-set(timer_qq
+set(timer_qqq
         ../src/timers/CTimers.cpp
         ../src/timers/CTimers.h
 )
 set(TestTimerQQ TestCTimers.cpp)
-add_executable(TestTimer ${timer_qq} ${TestTimerQQ})
+add_executable(TestTimer ${timer_qqq} ${TestTimerQQ})
 add_dependencies(TestTimer glm)
 target_link_libraries(TestTimer Qt5::Test coverage_config)
 set_target_properties(
